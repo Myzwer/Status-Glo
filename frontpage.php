@@ -87,85 +87,80 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="grid grid-cols-12 mt-20">
-                <div class="col-span-12">
-                    <div class="text-center md:text-left mb-1">
-                        <h1>PDF Download (four-up)</h1>
-                        <p>This configuration always shows four PDF's on one row.</p>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-
-
-            <div class="grid grid-cols-12 mt-5 gap-6">
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="text-center mb-1">
-                        <div class="w-24 text-center m-auto my-3">
-                            <img class="rounded-full"
-                                 src="https://images.unsplash.com/photo-1508515053963-70c7cc39dfb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
-                                 alt="">
-                        </div>
-                        <h2 class="font-bold text-2xl">PDF Title</h2>
-                        <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-                            corporis
-                            cumque doloremque error esse exercitationem explicabo iure iusto magni molestiae, nulla
-                            odio
-                            quam quo repellat vero. Aliquam possimus repellendus voluptate.</p>
-                    </div>
+    <div class="bg-no-repeat bg-scroll bg-cover relative" style="background: linear-gradient(
+              rgba(0, 0, 0, 0.45),
+              rgba(0, 0, 0, 0.45)
+            ), url('http://status-glo.local/wp-content/uploads/2021/09/Reviews-Section.jpg') center center;
+            ">
+        <div class="pb-10">
+            <div class="mx-4 md:mx-10 lg:max-w-7xl lg:text-center lg:mx-auto pt-10">
+                <div class="col-span-12 text-center my-5">
+                    <h2 class="text-5xl text-white">Reviews</h2>
                 </div>
 
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="text-center mb-1">
-                        <div class="w-24 text-center m-auto my-3">
-                            <img class="rounded-full"
-                                 src="https://images.unsplash.com/photo-1508515053963-70c7cc39dfb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
-                                 alt="">
-                        </div>
-                        <h2 class="font-bold text-2xl">PDF Title</h2>
-                        <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-                            corporis
-                            cumque doloremque error esse exercitationem explicabo iure iusto magni molestiae, nulla
-                            odio
-                            quam quo repellat vero. Aliquam possimus repellendus voluptate.</p>
-                    </div>
-                </div>
+                <div class="grid grid-cols-12 mb-10 gap-4 lg:mx-4">
+                    <div class="col-span-12 lg:col-span-4 bg-white rounded-xl shadow-2xl">
+                        <div class="text-center p-4">
+                            <h2 class="text-8xl text-left pt-2 pl-5 opacity-50 body-font">“</h2>
+                            <p class="text-left -mt-14 leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Semper ut enim, euismod pellentesque quisque. Donec odio etiam est nunc sed morbi
+                                aliquam. Dolor sit amet, consectetur adipiscing elit. Semper ut enim, euismod
+                                pellentesque quisque. Donec odio etiam est nunc sed morbi aliquam.</p>
+                            <p class="font-bold text-left pt-3">-Katie F</p>
 
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="text-center mb-1">
-                        <div class="w-24 text-center m-auto my-3">
-                            <img class="rounded-full"
-                                 src="https://images.unsplash.com/photo-1508515053963-70c7cc39dfb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
-                                 alt="">
+                            <div class="mt-5">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
-                        <h2 class="font-bold text-2xl">PDF Title</h2>
-                        <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-                            corporis
-                            cumque doloremque error esse exercitationem explicabo iure iusto magni molestiae, nulla
-                            odio
-                            quam quo repellat vero. Aliquam possimus repellendus voluptate.</p>
                     </div>
-                </div>
 
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="text-center mb-1">
-                        <div class="w-24 text-center m-auto my-3">
-                            <img class="rounded-full"
-                                 src="https://images.unsplash.com/photo-1508515053963-70c7cc39dfb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
-                                 alt="">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-xl shadow-2xl">
+                        <div class="text-center p-4">
+                            <h2 class="text-8xl text-left pt-2 pl-5 opacity-50 body-font">“</h2>
+                            <p class="text-left -mt-14 leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Semper ut enim, euismod pellentesque quisque. Donec odio etiam est nunc sed morbi
+                                aliquam. Dolor sit amet, consectetur adipiscing elit. Semper ut enim, euismod
+                                pellentesque quisque. Donec odio etiam est nunc sed morbi aliquam.</p>
+                            <p class="font-bold text-left pt-3">-Katie F</p>
+
+                            <div class="mt-5">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
-                        <h2 class="font-bold text-2xl">PDF Title</h2>
-                        <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-                            corporis
-                            cumque doloremque error esse exercitationem explicabo iure iusto magni molestiae, nulla
-                            odio
-                            quam quo repellat vero. Aliquam possimus repellendus voluptate.</p>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-xl shadow-2xl">
+                        <div class="text-center p-4">
+                            <h2 class="text-8xl text-left pt-2 pl-5 opacity-50 body-font">“</h2>
+                            <p class="text-left -mt-14 leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Semper ut enim, euismod pellentesque quisque. Donec odio etiam est nunc sed morbi
+                                aliquam. Dolor sit amet, consectetur adipiscing elit. Semper ut enim, euismod
+                                pellentesque quisque. Donec odio etiam est nunc sed morbi aliquam.</p>
+                            <p class="font-bold text-left pt-3">-Katie F</p>
+
+                            <div class="mt-5">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 <?php
