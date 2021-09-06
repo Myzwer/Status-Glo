@@ -1,0 +1,48 @@
+/**
+ * Forms
+ * =================================
+ * Gravity Forms generates the forms, so this changes some of those styles since you can't do it with tailwind.
+ *
+ *
+ *
+ */
+
+.form {
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  input {
+    border-radius: 3px;
+    color: #000000;
+  }
+
+  // I didn't generate this code, so stylelint needs to stop yelling at me.
+  /* stylelint-disable selector-class-pattern */
+  .gfield_description {
+    padding-top: 5px !important; //gravity forms is far too specific for me to override this, so I have to use important
+  }
+
+  .ginput_container_select {
+    color: #000000;
+  }
+
+  .gform_button {
+    background-color: #ff9700;
+    border-radius: 80px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: #000000;
+    font-weight: 800;
+    padding: 0.5em 2em;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .gform_button:hover {
+    background-color: #ff7300;
+  }
+
+  /* stylelint-enable selector-class-pattern */
+}
