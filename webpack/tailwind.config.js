@@ -33,16 +33,18 @@ module.exports = {
        * */
       blue: {
         light: "#00adee", // text-blue-light
-        DEFAULT: "#0000a8", // text-blue
+        DEFAULT: "#0096ee", // text-blue
+        dark: "#0000a8", // text-blue-dark
       },
       orange: {
-        DEFAULT: "#ff7f00",
+        DEFAULT: "#ff9700",
+        hover: "#ff7300",
       },
       white: {
         DEFAULT: "#f8f8ff",
       },
       black: {
-        DEFAULT: "#333333",
+        DEFAULT: "#000000",
       },
     },
   },
