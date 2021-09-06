@@ -90,11 +90,12 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="bg-no-repeat bg-scroll bg-cover relative" style="background: linear-gradient(
+
+    <div class="inline-background" style="background: linear-gradient(
               rgba(0, 0, 0, 0.45),
               rgba(0, 0, 0, 0.45)
-            ), url('http://status-glo.local/wp-content/uploads/2021/09/Reviews-Section.jpg') center center;
-            ">
+            ), url('http://status-glo.local/wp-content/uploads/2021/09/Reviews-Section.jpg') no-repeat center center fixed;
+              ">
         <div class="pb-10">
             <div class="mx-4 md:mx-10 lg:max-w-7xl lg:text-center lg:mx-auto pt-10">
                 <div class="col-span-12 text-center my-5">
@@ -176,7 +177,9 @@ get_header(); ?>
                             <div class="text-center p-4 md:py-12">
                                 <h2 class="text-2xl text-left">Natayla Smith</h2>
                                 <p class="text-left font-bold -mt-2 mb-2">Owner</p>
-                                <p class="text-left leading-4">We are family owned company and proudly serve Knoxville and Maryville, TN area. The goal here at Status Glo is to serve your home or office with care by bringing high standards and using the most efficient ways to clean.</p>
+                                <p class="text-left leading-4">We are family owned company and proudly serve Knoxville
+                                    and Maryville, TN area. The goal here at Status Glo is to serve your home or office
+                                    with care by bringing high standards and using the most efficient ways to clean.</p>
                                 <div class="my-5">
                                     <a href=""
                                        class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover">
