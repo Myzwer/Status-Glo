@@ -55,7 +55,7 @@ get_header(); ?>
 
             <div class="grid grid-cols-12 gap-4 mt-6">
                 <div class="col-span-12 text-center mt-10">
-                    <h2 class="text-4xl">Cleaning for every situation</h2>
+                    <h2 class="text-2xl body-font uppercase font-bold">Cleaning for every situation</h2>
                 </div>
                 <div class="col-span-12 md:col-span-6 card-gradient-1 rounded-xl shadow-2xl">
                     <div class="text-center p-4">
@@ -155,6 +155,34 @@ get_header(); ?>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white pb-20">
+            <div class="mx-4 md:mx-10 lg:max-w-4xl lg:text-center lg:mx-auto pt-10">
+                <div class="col-span-12 text-center my-5">
+                    <h2 class="text-5xl mb-2">About Us</h2>
+
+                    <div class="grid grid-cols-12 md:items-end">
+                        <div class="col-span-9 md:col-span-5">
+                            <img class=" rounded-xl shadow-2xl"
+                                 src="http://status-glo.local/wp-content/uploads/2021/09/Headshot.jpg" alt="">
+                        </div>
+                        <div class="col-start-3 col-span-9 md:col-span-7 card-gradient-1 rounded-xl shadow-2xl -mt-20 md:-mb-10 md:-ml-20">
+                            <div class="text-center p-4 md:py-12">
+                                <h2 class="text-2xl text-left">Natayla Smith</h2>
+                                <p class="text-left font-bold -mt-2 mb-2">Owner</p>
+                                <p class="text-left leading-4">We are family owned company and proudly serve Knoxville and Maryville, TN area. The goal here at Status Glo is to serve your home or office with care by bringing high standards and using the most efficient ways to clean.</p>
+                                <div class="my-5">
+                                    <a href=""
+                                       class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover">
+                                        About Us
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
