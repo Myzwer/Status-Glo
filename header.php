@@ -30,8 +30,7 @@
 </head>
 
 <!--Open Body, Apply any Tailwind classes that are global here, Leave WP stuff alone. -->
-<body class="leading-normal tracking-normal"
-      style="font-family: 'Source Sans Pro', sans-serif;" <?php body_class(); ?>>
+<body class="leading-normal tracking-normal" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
 
@@ -41,7 +40,7 @@
         <div class="brand">
             <a href="/frontpage">
                 <!--Company Logo / Branding. Template supports both Text and Logo-->
-                <img src="http://status-glo.local/wp-content/uploads/2021/09/Icon.png"
+                <img src="http://status-glo.local/wp-content/uploads/2021/09/Icon-White-Small.png"
                      alt="Company Logo">
             </a>
         </div>
