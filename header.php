@@ -41,7 +41,7 @@
         <div class="brand">
             <a href="/frontpage">
                 <!--Company Logo / Branding. Template supports both Text and Logo-->
-                <img src="https://images.squarespace-cdn.com/content/v1/575a6067b654f9b902f452f4/1552683653140-0UUVQSSUEWVC73AWAEQG/300Logo.png"
+                <img src="http://status-glo.local/wp-content/uploads/2021/09/Icon.png"
                      alt="Company Logo">
             </a>
         </div>
