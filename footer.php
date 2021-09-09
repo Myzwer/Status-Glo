@@ -19,11 +19,11 @@
     <div class="footer-left">
 
         <!--Company Logo-->
-        <img src="https://images.squarespace-cdn.com/content/v1/575a6067b654f9b902f452f4/1552683653140-0UUVQSSUEWVC73AWAEQG/300Logo.png">
+        <img src="http://status-glo.local/wp-content/uploads/2021/09/Icon-White-Small.png">
         <div class="left-inner">
             <!--Company Info-->
-            <h3>Fancy Company</h3>
-            <p class="phone-number">+1 234-567-8901</p>
+            <h3>Status Glo</h3>
+            <p class="phone-number"><a href="tel:">+1 234-567-8901</a></p>
         </div>
     </div>
 
@@ -39,16 +39,14 @@
         <div class="bot-inner">
 
             <!--Copyright Info-->
-            <p>Some Text</p>
-            <p>© <?php echo date("Y"); ?> Website Company Name</p>
+            <p>Bonded, Licensed and Insured</p>
+            <p>© <?php echo date("Y"); ?> Natacha’s Cleaning Services</p>
 
             <!--Socials, icons from: https://fontawesome.com/ -->
             <div class="footer-icons">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
         </div>
     </div>
 </footer>

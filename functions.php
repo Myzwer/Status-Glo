@@ -46,6 +46,16 @@ function load_styles() {
 add_action('wp_enqueue_scripts', 'load_styles');
 
 
+//*****************************************************
+//*********************** FONTS ***********************
+//*****************************************************
+
+wp_register_style( 'BEBAS_font', 'https://fonts.googleapis.com/css2?family=Bebas+Neue' );
+wp_enqueue_style('BEBAS_font');
+
+wp_register_style( 'Quattrocentro_font', 'https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700' );
+wp_enqueue_style('Quattrocentro_font');
+
 
 //*****************************************************
 //******************* M E N U S ***********************

@@ -15,11 +15,11 @@
 $content-width: 1000px; // How wide or narrow do you want the bar to be?
 $breakpoint: 799px; // When do you want to switch from mobile to desktop?
 $nav-height: 70px; // How tall do you want the navbar to be?
-$nav-background: #262626; // What background color do you want?
-$nav-font-color: #ffffff; // What primary font color?
-$link-hover-color: #2581dc; // What color when you hover?
-$button-color: #ff5555; // What background color do you want the button to be?
-$button-hover-color: #e03a3a; // What hover color do you want the button to be?
+$nav-background: #0044d8; // What background color do you want?
+$nav-font-color: #f8f8ff; // What primary font color?
+$link-hover-color: #00adee; // What color when you hover?
+$button-color: #f8f8ff; // What background color do you want the button to be?
+$button-hover-color: #00adee; // What hover color do you want the button to be?
 
 // Outer navigation wrapper
 .navigation {
@@ -43,7 +43,8 @@ $button-hover-color: #e03a3a; // What hover color do you want the button to be?
 
   // If you change your navbar height, you may need to adjust this.
   img {
-    height: 70px;
+    height: 50px;
+    margin-top: 10px;
   }
 }
 
@@ -220,6 +221,8 @@ nav {
 
   li:last-of-type a {
     background-color: rgba(0, 0, 0, 0);
+    color: #333333;
+    font-weight: 800;
   }
 
   li:last-of-type:hover a {
@@ -236,7 +239,8 @@ nav {
 
   @media screen and (min-width: $breakpoint) {
     li:last-of-type {
-      border-radius: 10px;
+      border-radius: 40px;
+      margin-left: 5px;
       margin-top: 15px;
     }
 
