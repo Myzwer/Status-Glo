@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Wordpack Theme
+ * @subpackage Status_glo
  * @since 1.0.0
  */
 

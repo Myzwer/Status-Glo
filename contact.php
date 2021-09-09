@@ -2,12 +2,11 @@
 /**
  * Template Name: Contact
  *
- * The Frontpage of the Status Glo Theme
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Status Glo
+ * @subpackage Status_glo
  * @since 1.0.0
  */
 
