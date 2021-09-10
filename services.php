@@ -16,14 +16,14 @@ get_header(); ?>
           rgba(0, 68, 216, 0.25)
         ); height: 60vh;">
         <div class="content-middle text-black text-center">
-            <h1 class="text-6xl md:text-7xl mb-3">No Time to Clean?</h1>
-            <h1 class="text-6xl md:text-7xl mb-3">No Problem!</h1>
-            <h2 class="text-xl md:text-xl my-5 mx-auto leading-5 md:w-2/5 md:max-w-2xl body-font">Choose your package
+            <h1 class="text-3xl md:text-7xl md:mb-3">No Time to Clean?</h1>
+            <h1 class="text-3xl md:text-7xl mb-3">No Problem!</h1>
+            <h2 class="text-lg px-5 md:text-xl my-5 mx-auto leading-5 md:w-2/5 md:max-w-2xl body-font">Choose your package
                 that
                 fits your home cleaning needs and you will be contacted by us to give you an estimate shortly.</h2>
             <a href=""
                class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover mt-10">
-                Book Your Cleaning
+                Book Now
             </a>
         </div>
     </div>
@@ -195,7 +195,7 @@ get_header(); ?>
         );">
         <div class="mx-4 md:mx-10 lg:max-w-3xl lg:mx-auto py-10">
             <h1 class="text-5xl md:text-6xl md:text-7xl mb-3 text-center">About Status Glo</h1>
-            <h3 class="body-font font-bold text-2xl pb-4">“Do to others as you would have them do to you.” - Luke 6:31</h3>
+            <h3 class="body-font font-bold text-xl md:text-2xl pb-4">“Do to others as you would have them do to you.” - Luke 6:31</h3>
                 <p class="leading-5 pb-4">I welcome you to our website page and hope you will enjoy exploring what we have to offer.</p>
                 <p class="leading-5 pb-4">We are family owned company and proudly serve Knoxville and Maryville, TN area. The goal here at
                     Status

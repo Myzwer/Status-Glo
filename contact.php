@@ -25,19 +25,19 @@ get_header(); ?>
     <div class="mx-4 md:mx-10 lg:max-w-4xl lg:text-center lg:mx-auto pt-10">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 card-gradient-1 rounded-xl shadow-2xl mb-10">
-                <div class="text-center p-10 text-white">
+                <div class="text-center p-5 md:p-10 text-white">
                     <h2 class="text-3xl text-left">How To Get Booked?</h2>
-                    <p class="text-left">You can contact us or use the form to get in touch. If you’re interested in
+                    <p class="text-left mb-5">You can contact us or use the form to get in touch. If you’re interested in
                         booking head over to our booking page to get a quote!</p>
                     <a href=""
-                       class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover mt-10">
+                       class="bg-orange rounded-full font-bold shadow-xl text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover mt-10">
                         Book Now
                     </a>
                 </div>
             </div>
 
             <div class="col-span-12 md:col-span-8 card-gradient-1 rounded-xl shadow-2xl">
-                <div class="text-left p-10 text-white form">
+                <div class="text-left p-5 md:p-10 text-white form">
                     <?php if (have_posts()) : while (have_posts()) : the_post();
                         the_content();
                     endwhile;
@@ -53,8 +53,8 @@ get_header(); ?>
                         <div class="card-gradient-1 rounded-xl shadow-2xl">
                             <div class="text-left p-10 text-white">
                                 <h2 class="text-3xl text-left">Get In Touch</h2>
-                                <p class="text-left"><i class="fas fa-phone text-xl"></i> 123-456-7890</p>
-                                <p class="text-left"><i class="far fa-envelope text-xl"></i> admin@statusglo.com</p>
+                                <p class="text-left"> <a href="tel:123-456-7890"><i class="fas fa-phone text-xl"></i> 123-456-7890</a></p>
+                                <p class="text-left"><a href="mailto:admin@statusglo.com"><i class="far fa-envelope"></i> admin@statusglo.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -63,8 +63,8 @@ get_header(); ?>
                         <div class="card-gradient-1 rounded-xl shadow-2xl">
                             <div class="text-left p-10 text-white">
                                 <h2 class="text-3xl text-left">Careers</h2>
-                                <p class="text-left font-bold leading-5">Contact us about becoming an employee by using form or email us at:</p>
-                                <p class="text-left"><i class="far fa-envelope"></i> admin@statusglo.com</p>
+                                <p class="text-left font-bold leading-5 pb-3">Contact us about becoming an employee by using form or email us at:</p>
+                                <p class="text-left"><a href="mailto:admin@statusglo.com"><i class="far fa-envelope"></i> admin@statusglo.com</a></p>
                             </div>
                         </div>
                     </div>
