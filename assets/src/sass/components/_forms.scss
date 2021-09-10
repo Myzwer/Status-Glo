@@ -19,6 +19,11 @@
     color: #000000;
   }
 
+  select,
+  textarea {
+    border-radius: 3px;
+  }
+
   // I didn't generate this code, so stylelint needs to stop yelling at me.
   /* stylelint-disable selector-class-pattern */
   .gfield_description {
