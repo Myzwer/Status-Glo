@@ -25,7 +25,7 @@ get_header(); ?>
     <div class="mx-4 md:mx-10 lg:max-w-4xl lg:text-center lg:mx-auto pt-10">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 card-gradient-1 rounded-xl shadow-2xl mb-10">
-                <div class="text-center p-10 text-white">
+                <div class="text-center p-5 md:p-10 text-white">
                     <h2 class="text-3xl text-left">How To Get Booked?</h2>
                     <p class="text-left mb-5">You can contact us or use the form to get in touch. If you’re interested in
                         booking head over to our booking page to get a quote!</p>
