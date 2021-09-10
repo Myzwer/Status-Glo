@@ -20,7 +20,7 @@ get_header(); ?>
         <div class="content-middle text-black text-center">
             <h1 class="text-6xl md:text-7xl mb-3">Status Glo</h1>
             <hr class="text-blue-dark w-2/4 m-auto">
-            <h2 class="text-xl md:text-3xl my-5 mx-auto leading-5 md:w-2/5 md:max-w-lg">Cleaning services for homes and
+            <h2 class="text-xl md:text-2xl px-5 my-5 mx-auto leading-5 md:w-2/5 md:max-w-2lg">Cleaning services for homes and
                 offices by serving them with care and love. </h2>
             <a href=""
                class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover mt-10">
@@ -37,14 +37,14 @@ get_header(); ?>
 
             <div class="grid grid-cols-12">
                 <div class="col-span-12 card-gradient-1 rounded-xl shadow-2xl">
-                    <div class="text-center p-4">
+                    <div class="text-center text-white p-4">
                         <h2 class="text-3xl">Book Your Cleaning</h2>
                         <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam
                             commodi consequuntur distinctio doloribus eaque, earum exercitationem, fuga iste labore
                             magni, maxime molestiae nulla pariatur quod sapiente totam vel voluptate?</p>
                         <div class="my-5">
                             <a href=""
-                               class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover">
+                               class="bg-orange rounded-full font-bold shadow-xl text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover mt-10">
                                 Book Your Cleaning
                             </a>
                         </div>
@@ -58,14 +58,14 @@ get_header(); ?>
                     <h2 class="text-2xl body-font uppercase font-bold">Cleaning for every situation</h2>
                 </div>
                 <div class="col-span-12 md:col-span-6 card-gradient-1 rounded-xl shadow-2xl">
-                    <div class="text-center p-4">
-                        <h2 class="text-3xl">Book Your Cleaning</h2>
+                    <div class="text-center text-white p-4">
+                        <h2 class="text-3xl">Residential</h2>
                         <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam
                             commodi consequuntur distinctio doloribus eaque, earum exercitationem, fuga iste labore
                             magni, maxime molestiae nulla pariatur quod sapiente totam vel voluptate?</p>
                         <div class="my-5">
                             <a href=""
-                               class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover">
+                               class="bg-orange rounded-full font-bold shadow-xl text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover">
                                 Book Your Cleaning
                             </a>
                         </div>
@@ -73,14 +73,14 @@ get_header(); ?>
                 </div>
 
                 <div class="col-span-12 md:col-span-6 card-gradient-1 rounded-xl shadow-2xl">
-                    <div class="text-center p-4">
-                        <h2 class="text-3xl">Book Your Cleaning</h2>
+                    <div class="text-center text-white p-4">
+                        <h2 class="text-3xl">Commerical</h2>
                         <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam
                             commodi consequuntur distinctio doloribus eaque, earum exercitationem, fuga iste labore
                             magni, maxime molestiae nulla pariatur quod sapiente totam vel voluptate?</p>
                         <div class="my-5">
                             <a href=""
-                               class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover">
+                               class="bg-orange rounded-full font-bold shadow-xl text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover">
                                 Book Your Cleaning
                             </a>
                         </div>
@@ -174,15 +174,15 @@ get_header(); ?>
                                  src="http://status-glo.local/wp-content/uploads/2021/09/Headshot.jpg" alt="">
                         </div>
                         <div class="col-start-3 col-span-9 md:col-span-7 card-gradient-1 rounded-xl shadow-2xl -mt-20 md:-mb-10 md:-ml-20">
-                            <div class="text-center p-4 md:py-12">
+                            <div class="text-center text-white p-4 md:py-12">
                                 <h2 class="text-2xl text-left">Natayla Smith</h2>
                                 <p class="text-left font-bold -mt-2 mb-2">Owner</p>
-                                <p class="text-left leading-4">We are family owned company and proudly serve Knoxville
+                                <p class="text-left leading-4 tracking-wider">We are family owned company and proudly serve Knoxville
                                     and Maryville, TN area. The goal here at Status Glo is to serve your home or office
                                     with care by bringing high standards and using the most efficient ways to clean.</p>
                                 <div class="my-5">
                                     <a href=""
-                                       class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover">
+                                       class="bg-orange rounded-full font-bold shadow-xl text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover">
                                         About Us
                                     </a>
                                 </div>
