@@ -25,14 +25,14 @@ get_header(); ?>
     <div class="mx-4 md:mx-10 lg:max-w-4xl lg:text-center lg:mx-auto pt-10">
         <div class="grid grid-cols-12">
             <div class="col-span-12 card-gradient-1 rounded-xl shadow-2xl mb-10">
-                <div class="text-center p-10 text-white">
+                <div class="text-center p-5 md:p-10 text-white">
                     <h2 class="text-3xl text-left">Want to get booked?</h2>
                     <p class="text-left">We offer recurring clean, deep or detail clean, custom clean, packages, One-time and customized clean. Our professional cleaning technicians are experienced and trustworthy and will take care of any job with excellence. We want our clients to be happy and satisfied! Contact us for more information.</p>
                 </div>
             </div>
 
             <div class="col-span-12 card-gradient-1 rounded-xl shadow-2xl">
-                <div class="text-left p-10 text-white form">
+                <div class="text-left p-5 md:p-10 text-white form">
                     <?php if (have_posts()) : while (have_posts()) : the_post();
                         the_content();
                     endwhile;
