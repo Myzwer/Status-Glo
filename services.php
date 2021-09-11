@@ -205,28 +205,28 @@ get_header(); ?>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-
-
             </div>
         </div>
     </div>
 
-    <div class="inline-background" style="background: linear-gradient(
-              rgba(0, 0, 0, 0.85),
-              rgba(0, 0, 0, 0.85)
-            ), url('http://status-glo.local/wp-content/uploads/2021/09/Knoxville-Map.jpg') no-repeat center center fixed;
-              ">
-        <div class="pb-10">
-            <div class="mx-4 md:mx-10 lg:max-w-7xl lg:text-center lg:mx-auto pt-10">
-                <div class="col-span-12 md:text-center my-5 text-white py-10">
-                    <h2 class="text-5xl text-center text-white pb-5">Service Area</h2>
-                    <h3 class="body-font font-bold text-2xl">Proudly serving the greater Knoxville Maryville, TN
-                        Area.</h3>
-                    <p>We proudly serve the greater Knoxville Maryville area, TN and would love to have your home or
-                        business under our care. </p>
-                </div>
+<?php if (have_rows('background_image')): ?>
+    <?php while (have_rows('background_image')): the_row(); ?>
+        <div class="inline-background" style="background: linear-gradient(
+                rgba(0, 0, 0, 0.<?php the_sub_field('tinting'); ?>),
+                rgba(0, 0, 0, 0.<?php the_sub_field('tinting'); ?>)
+                ), url('<?php the_sub_field('background_image'); ?>') no-repeat <?php the_sub_field('v_position'); ?> <?php the_sub_field('h_position'); ?> fixed;
+                ">
+    <?php endwhile; ?>
+<?php endif; ?>
+    <div class="pb-10">
+        <div class="mx-4 md:mx-10 lg:max-w-7xl lg:text-center lg:mx-auto pt-10">
+            <div class="col-span-12 md:text-center my-5 text-white py-10">
+                <h2 class="text-5xl text-center text-white pb-5"><?php the_field('area_title'); ?></h2>
+                <h3 class="body-font font-bold text-2xl"><?php the_field('area_subtitle'); ?></h3>
+                <p><?php the_field('area_body_text'); ?></p>
             </div>
         </div>
+    </div>
     </div>
 
     <div class="bg-no-repeat bg-scroll bg-cover relative" style="background: linear-gradient(
@@ -234,24 +234,11 @@ get_header(); ?>
           rgba(0, 68, 216, 0.25)
         );">
         <div class="mx-4 md:mx-10 lg:max-w-3xl lg:mx-auto py-10">
-            <h1 class="text-5xl md:text-6xl md:text-7xl mb-3 text-center">About Status Glo</h1>
-            <h3 class="body-font font-bold text-xl md:text-2xl pb-4">“Do to others as you would have them do to you.” -
-                Luke 6:31</h3>
-            <p class="leading-5 pb-4">I welcome you to our website page and hope you will enjoy exploring what we have
-                to offer.</p>
-            <p class="leading-5 pb-4">We are family owned company and proudly serve Knoxville and Maryville, TN area.
-                The goal here at
-                Status
-                Glo is to serve your home or office with care by bringing high standards and using the most
-                efficient
-                ways to clean.
-                We've started our journey in 2019 and successfully continue to fulfill and grow our company since
-                then.</p>
-            <p class="leading-5 pb-4">Our main focus is to "do to others as we would have them do to us" meaning that we
-                desire to serve
-                your home or business with as much care and excellence as we possibly can.</p>
-            <p class="leading-5 text-right">Sincerely,</p>
-            <p class="leading-5 pb-4 text-right">Natalya Smith</p>
+            <h1 class="text-5xl md:text-6xl md:text-7xl mb-3 text-center"><?php the_field('about_title'); ?></h1>
+            <h3 class="body-font font-bold text-xl md:text-2xl pb-4"><?php the_field('about_subtitle'); ?></h3>
+            <p class="leading-5 pb-4"><?php the_field('about_paragraph'); ?></p>
+            <p class="leading-5 text-right"><?php the_field('signature_line_1'); ?></p>
+            <p class="leading-5 pb-4 text-right"><?php the_field('signature_line_2'); ?></p>
 
         </div>
     </div>
