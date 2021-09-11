@@ -44,8 +44,10 @@ get_header(); ?>
                             <div class="rounded-t-xl py-7">
                             </div>
                             <div class="text-center p-5">
-                                <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
-                                <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
+                                <div class="md:h-44">
+                                    <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
+                                    <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
+                                </div>
                                 <div class="my-5">
                                     <a href="<?php the_sub_field('button_link'); ?>"
                                        class="rounded-full font-bold block border-2 border-white text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-blue-light">
@@ -83,12 +85,14 @@ get_header(); ?>
                     <?php while (have_rows('package_2')): the_row(); ?>
 
                         <div class="col-span-12 md:col-span-6 lg:col-span-3 card-gradient-1 rounded-xl shadow-2xl text-white lg:-my-3">
-                            <div class="bg-orange rounded-t-xl py-3">
+                            <div class="bg-orange rounded-t-xl py-3 mb-4">
                                 <h3 class="text-xl text-center">Most Popular!</h3>
                             </div>
                             <div class="text-center p-5">
-                                <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
-                                <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
+                                <div class="md:h-44">
+                                    <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
+                                    <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
+                                </div>
                                 <div class="my-5">
                                     <a href="<?php the_sub_field('button_link'); ?>"
                                        class="rounded-full font-bold block border-2 border-white text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-blue-light">
@@ -129,8 +133,10 @@ get_header(); ?>
                             <div class="rounded-t-xl py-7">
                             </div>
                             <div class="text-center p-5">
-                                <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
-                                <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
+                                <div class="md:h-44">
+                                    <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
+                                    <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
+                                </div>
                                 <div class="my-5">
                                     <a href="<?php the_sub_field('button_link'); ?>"
                                        class="rounded-full font-bold block border-2 border-white text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-blue-light">
@@ -171,8 +177,10 @@ get_header(); ?>
                             <div class="rounded-t-xl py-7">
                             </div>
                             <div class="text-center p-5">
-                                <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
-                                <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
+                                <div class="md:h-44">
+                                    <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
+                                    <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
+                                </div>
                                 <div class="my-5">
                                     <a href="<?php the_sub_field('button_link'); ?>"
                                        class="rounded-full font-bold block border-2 border-white text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-blue-light">
