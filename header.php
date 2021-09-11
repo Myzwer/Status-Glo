@@ -40,7 +40,7 @@
         <div class="brand">
             <a href="/frontpage">
                 <!--Company Logo / Branding. Template supports both Text and Logo-->
-                <img src="http://status-glo.local/wp-content/uploads/2021/09/Icon-White-Small.png"
+                <img src="https://statusglo.com/wp-content/uploads/2021/09/Icon-White-Small.png"
                      alt="Company Logo">
             </a>
         </div>
