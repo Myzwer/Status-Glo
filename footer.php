@@ -19,7 +19,7 @@
     <div class="footer-left">
 
         <!--Company Logo-->
-        <img src="https://statusglo.com/wp-content/uploads/2021/09/Icon-White-Small.png">
+        <img src="https://statusglo.com/wp-content/uploads/2021/09/Icon-White-Small.png" alt = "Company Logo">
         <div class="left-inner">
             <!--Company Info-->
             <h3>Status Glo</h3>
