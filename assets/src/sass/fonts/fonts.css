@@ -1,0 +1,8 @@
+@font-face {
+  font-display: swap;
+  font-family: "HandelGotDLig";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../webfonts/HandelGotD-Ligh.woff2") format("woff2"),
+    url("../../webfonts/HandelGotD-Ligh.woff") format("woff");
+}
