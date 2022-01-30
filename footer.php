@@ -23,7 +23,7 @@
         <div class="left-inner">
             <!--Company Info-->
             <h3>Status Glo</h3>
-            <p class="phone-number"><a href="tel:">+1 234-567-8901</a></p>
+            <p class="phone-number"><a href="tel:8652473804">865-247-3804</a></p>
         </div>
     </div>
 
@@ -39,14 +39,13 @@
         <div class="bot-inner">
 
             <!--Copyright Info-->
-            <p>Bonded, Licensed and Insured</p>
-            <p>© <?php echo date("Y"); ?> Natacha’s Cleaning Services</p>
+            <p class = "text-lg">Bonded, Licensed and Insured</p>
+            <p>© <?php echo date("Y"); ?> Status Glo</p>
 
             <!--Socials, icons from: https://fontawesome.com/ -->
             <div class="footer-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/gotostatusglo"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/gotostatusglo/"><i class="fa fa-instagram"></i></a>
         </div>
     </div>
 </footer>
