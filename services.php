@@ -37,14 +37,27 @@ get_header(); ?>
             </div>
             <div class="grid grid-cols-12 gap-4 mt-6">
 
-                <?php if (have_rows('package_1')): ?>
-                    <?php while (have_rows('package_1')): the_row(); ?>
+            <?php
+            // Find out how many rows to set tailwind grid
+            $row_count = count(get_field('packages'));
+            $size = 0;
+            if ($row_count) {
+                $size = (int)12/$row_count;
+            }
+            if ($size < 2) {
+                //force minimum of col-lg-2
+                $size = 2;
+            }
+            $class = 'col-span-'.$size;
+                if( have_rows('packages') ):
+                while( have_rows('packages') ) : the_row();
+                ?>
 
-                        <div class="col-span-12 md:col-span-6 lg:col-span-4 card-gradient-1 rounded-xl shadow-2xl text-white">
+                        <div class="col-span-12 md:col-span-6 lg:<?php echo $class ?> card-gradient-1 rounded-xl shadow-2xl text-white">
                             <div class="rounded-t-xl py-7">
                             </div>
                             <div class="text-center p-5">
-                                <div class="md:h-56">
+                                <div class="md:h-auto">
                                     <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
                                     <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
                                 </div>
@@ -59,49 +72,7 @@ get_header(); ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
 
-                <?php if (have_rows('package_3')): ?>
-                    <?php while (have_rows('package_3')): the_row(); ?>
 
-                        <div class="col-span-12 md:col-span-6 lg:col-span-4 card-gradient-1 rounded-xl shadow-2xl text-white">
-                            <div class="rounded-t-xl py-7">
-                            </div>
-                            <div class="text-center p-5">
-                                <div class="md:h-56">
-                                    <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
-                                    <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
-                                </div>
-                                <div class="my-5">
-                                    <a href="<?php the_sub_field('button_link'); ?>"
-                                       class="rounded-full font-bold block border-2 border-white text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-blue-light">
-                                        <?php the_sub_field('button_text'); ?>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-
-                <?php if (have_rows('package_4')): ?>
-                    <?php while (have_rows('package_4')): the_row(); ?>
-
-                        <div class="col-span-12 md:col-span-12 lg:col-span-4 card-gradient-1 rounded-xl shadow-2xl text-white">
-                            <div class="rounded-t-xl py-7">
-                            </div>
-                            <div class="text-center p-5">
-                                <div class="md:h-56">
-                                    <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
-                                    <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
-                                </div>
-                                <div class="my-5">
-                                    <a href="<?php the_sub_field('button_link'); ?>"
-                                       class="rounded-full font-bold block border-2 border-white text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-blue-light">
-                                        <?php the_sub_field('button_text'); ?>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
             </div>
         </div>
     </div>
