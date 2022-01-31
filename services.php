@@ -67,6 +67,23 @@ get_header(); ?>
                                         <?php the_sub_field('button_text'); ?>
                                     </a>
                                 </div>
+                                <div class="my-3 text-left">
+                                    <?php if ( get_sub_field('package_includes_title') ): ?>
+                                    <h5><?php the_sub_field('package_includes_title'); ?></h5>
+                                    <hr>
+                                    <?php endif;?>
+
+                                    <!-- Start Nested Repeater -->
+                                    <ul class = "pt-3">
+                                        <?php if( have_rows('included_item') ):
+                                        // Loop through rows.
+                                        while( have_rows('included_item') ) : the_row();?>
+                                            <li>- <?php the_sub_field("item"); ?></li>
+                                            <?php endwhile; ?>
+                                        <?php endif; ?>
+                                    </ul>
+                                    <!-- End Nested Repeater -->
+                                </div>
                             </div>
                         </div>
                     <?php endwhile; ?>
