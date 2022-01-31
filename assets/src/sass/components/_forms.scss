@@ -25,12 +25,16 @@
   }
 
   // I didn't generate this code, so stylelint needs to stop yelling at me.
-  /* stylelint-disable selector-class-pattern */
+  /* stylelint-disable selector-class-pattern, selector-no-qualifying-type, selector-max-compound-selectors */
   .gfield_description {
     padding-top: 5px !important; //gravity forms is far too specific for me to override this, so I have to use important
   }
 
   .ginput_container_select {
+    color: #000000;
+  }
+
+  .gform_wrapper.gravity-theme .gfield textarea.large {
     color: #000000;
   }
 

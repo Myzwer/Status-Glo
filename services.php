@@ -37,14 +37,27 @@ get_header(); ?>
             </div>
             <div class="grid grid-cols-12 gap-4 mt-6">
 
-                <?php if (have_rows('package_1')): ?>
-                    <?php while (have_rows('package_1')): the_row(); ?>
+            <?php
+            // Find out how many rows to set tailwind grid
+            $row_count = count(get_field('packages'));
+            $size = 0;
+            if ($row_count) {
+                $size = (int)12/$row_count;
+            }
+            if ($size < 2) {
+                //force minimum of col-lg-2
+                $size = 2;
+            }
+            $class = 'col-span-'.$size;
+                if( have_rows('packages') ):
+                while( have_rows('packages') ) : the_row();
+                ?>
 
-                        <div class="col-span-12 md:col-span-6 lg:col-span-3 card-gradient-1 rounded-xl shadow-2xl text-white">
+                        <div class="col-span-12 md:col-span-6 lg:<?php echo $class ?> card-gradient-1 rounded-xl shadow-2xl text-white">
                             <div class="rounded-t-xl py-7">
                             </div>
                             <div class="text-center p-5">
-                                <div class="md:h-44">
+                                <div class="md:h-auto">
                                     <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
                                     <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
                                 </div>
@@ -54,165 +67,29 @@ get_header(); ?>
                                         <?php the_sub_field('button_text'); ?>
                                     </a>
                                 </div>
+                                <div class="my-3 text-left">
+                                    <?php if ( get_sub_field('package_includes_title') ): ?>
+                                    <h5><?php the_sub_field('package_includes_title'); ?></h5>
+                                    <hr>
+                                    <?php endif;?>
 
-                                <div class="py-2 text-left">
-                                    <?php
-                                    if (have_rows('highlighted_features')):
-                                        while (have_rows('highlighted_features')) : the_row(); ?>
-                                            <p>
-                                                <i class="fas fa-check-circle text-blue-dark"></i> <?php the_sub_field('feature'); ?>
-                                            </p>
-                                        <?php endwhile;
-                                    endif; ?>
-                                </div>
-
-                                <hr class=" m-auto">
-
-                                <div class="py-2 text-left">
-                                    <?php
-                                    if (have_rows('other_features')):
-                                        while (have_rows('other_features')) : the_row(); ?>
-                                            <p>+ <?php the_sub_field('feature'); ?> </p>
-                                        <?php endwhile;
-                                    endif; ?>
+                                    <!-- Start Nested Repeater -->
+                                    <ul class = "pt-3">
+                                        <?php if( have_rows('included_item') ):
+                                        // Loop through rows.
+                                        while( have_rows('included_item') ) : the_row();?>
+                                            <li>- <?php the_sub_field("item"); ?></li>
+                                            <?php endwhile; ?>
+                                        <?php endif; ?>
+                                    </ul>
+                                    <!-- End Nested Repeater -->
                                 </div>
                             </div>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
 
-                <?php if (have_rows('package_2')): ?>
-                    <?php while (have_rows('package_2')): the_row(); ?>
 
-                        <div class="col-span-12 md:col-span-6 lg:col-span-3 card-gradient-2 rounded-xl shadow-2xl text-white lg:-my-3">
-                            <div class="bg-orange rounded-t-xl py-3 mb-4">
-                                <h3 class="text-xl text-center">Most Popular!</h3>
-                            </div>
-                            <div class="text-center p-5">
-                                <div class="md:h-44">
-                                    <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
-                                    <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
-                                </div>
-                                <div class="my-5">
-                                    <a href="<?php the_sub_field('button_link'); ?>"
-                                       class="rounded-full font-bold block border-2 bg-white text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-blue-light">
-                                        <?php the_sub_field('button_text'); ?>
-                                    </a>
-                                </div>
-
-                                <div class="py-2 text-left">
-                                    <?php
-                                    if (have_rows('highlighted_features')):
-                                        while (have_rows('highlighted_features')) : the_row(); ?>
-                                            <p>
-                                                <i class="fas fa-check-circle text-blue-light"></i> <?php the_sub_field('feature'); ?>
-                                            </p>
-                                        <?php endwhile;
-                                    endif; ?>
-                                </div>
-
-                                <hr class=" m-auto">
-
-                                <div class="py-2 text-left">
-                                    <?php
-                                    if (have_rows('other_features')):
-                                        while (have_rows('other_features')) : the_row(); ?>
-                                            <p>+ <?php the_sub_field('feature'); ?> </p>
-                                        <?php endwhile;
-                                    endif; ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-
-                <?php if (have_rows('package_3')): ?>
-                    <?php while (have_rows('package_3')): the_row(); ?>
-
-                        <div class="col-span-12 md:col-span-6 lg:col-span-3 card-gradient-1 rounded-xl shadow-2xl text-white">
-                            <div class="rounded-t-xl py-7">
-                            </div>
-                            <div class="text-center p-5">
-                                <div class="md:h-44">
-                                    <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
-                                    <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
-                                </div>
-                                <div class="my-5">
-                                    <a href="<?php the_sub_field('button_link'); ?>"
-                                       class="rounded-full font-bold block border-2 border-white text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-blue-light">
-                                        <?php the_sub_field('button_text'); ?>
-                                    </a>
-                                </div>
-
-                                <div class="py-2 text-left">
-                                    <?php
-                                    if (have_rows('highlighted_features')):
-                                        while (have_rows('highlighted_features')) : the_row(); ?>
-                                            <p>
-                                                <i class="fas fa-check-circle text-blue-dark"></i> <?php the_sub_field('feature'); ?>
-                                            </p>
-                                        <?php endwhile;
-                                    endif; ?>
-                                </div>
-
-                                <hr class=" m-auto">
-
-                                <div class="py-2 text-left">
-                                    <?php
-                                    if (have_rows('other_features')):
-                                        while (have_rows('other_features')) : the_row(); ?>
-                                            <p>+ <?php the_sub_field('feature'); ?> </p>
-                                        <?php endwhile;
-                                    endif; ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-
-                <?php if (have_rows('package_4')): ?>
-                    <?php while (have_rows('package_4')): the_row(); ?>
-
-                        <div class="col-span-12 md:col-span-6 lg:col-span-3 card-gradient-1 rounded-xl shadow-2xl text-white">
-                            <div class="rounded-t-xl py-7">
-                            </div>
-                            <div class="text-center p-5">
-                                <div class="md:h-44">
-                                    <h2 class="text-3xl text-left"><?php the_sub_field('package_title'); ?></h2>
-                                    <p class="text-left leading-5"><?php the_sub_field('package_description'); ?></p>
-                                </div>
-                                <div class="my-5">
-                                    <a href="<?php the_sub_field('button_link'); ?>"
-                                       class="rounded-full font-bold block border-2 border-white text-white px-8 py-3 transition duration-300 ease-in-out hover:bg-blue-light">
-                                        <?php the_sub_field('button_text'); ?>
-                                    </a>
-                                </div>
-
-                                <div class="py-2 text-left">
-                                    <?php
-                                    if (have_rows('highlighted_features')):
-                                        while (have_rows('highlighted_features')) : the_row(); ?>
-                                            <p>
-                                                <i class="fas fa-check-circle text-blue-dark"></i> <?php the_sub_field('feature'); ?>
-                                            </p>
-                                        <?php endwhile;
-                                    endif; ?>
-                                </div>
-
-                                <hr class=" m-auto">
-
-                                <div class="py-2 text-left">
-                                    <?php
-                                    if (have_rows('other_features')):
-                                        while (have_rows('other_features')) : the_row(); ?>
-                                            <p>+ <?php the_sub_field('feature'); ?> </p>
-                                        <?php endwhile;
-                                    endif; ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
             </div>
         </div>
     </div>
