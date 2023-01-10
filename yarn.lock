@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8
 
 "@babel/code-frame@npm:7.12.11":
@@ -1925,6 +1925,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"acorn@npm:^8.5.0":
+  version: 8.8.1
+  resolution: "acorn@npm:8.8.1"
+  bin:
+    acorn: bin/acorn
+  checksum: 4079b67283b94935157698831967642f24a075c52ce3feaaaafe095776dfbe15d86a1b33b1e53860fc0d062ed6c83f4284a5c87c85b9ad51853a01173da6097f
+  languageName: node
+  linkType: hard
+
 "adjust-sourcemap-loader@npm:^4.0.0":
   version: 4.0.0
   resolution: "adjust-sourcemap-loader@npm:4.0.0"
@@ -2918,9 +2927,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001251, caniuse-lite@npm:^1.0.30001252":
-  version: 1.0.30001252
-  resolution: "caniuse-lite@npm:1.0.30001252"
-  checksum: 0d25a2795ca224c1a689b08fe37a5dc6c4c79d80720f927bf7df70ed30c1b1b62c3cc51429eac01902d3fc298d9531b85efec331c2a051e42615c76fa348f118
+  version: 1.0.30001442
+  resolution: "caniuse-lite@npm:1.0.30001442"
+  checksum: c1bff65bd4f53da2d288e7f55be40706ee0119b983eae5a9dcc884046990476891630aef72d708f7989f8f1964200c44e4c37ea40deecaa2fb4a480df23e6317
   languageName: node
   linkType: hard
 
@@ -11381,11 +11390,11 @@ __metadata:
 
 "typescript@patch:typescript@^4.3.5#~builtin<compat/typescript>":
   version: 4.4.2
-  resolution: "typescript@patch:typescript@npm%3A4.4.2#~builtin<compat/typescript>::version=4.4.2&hash=493e53"
+  resolution: "typescript@patch:typescript@npm%3A4.4.2#~builtin<compat/typescript>::version=4.4.2&hash=a1c5e5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 1f30617046271a94d6821fe9da9c4705111e0a2f5479269c82f65aa76b2421ff90def8838dd35b1aa464d015248b06c89ff867bd282f4822b5ee18b7f92f95ee
+  checksum: 4e64d212c1b70ed178b0894c23b4c78a5bf2491d08707098b61f24e54331c47c3c166de210551e7edf26fc0bbdfd5b1548d3d15ed3f738880e4f01c6b6a8b63a
   languageName: node
   linkType: hard
 
