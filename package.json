@@ -38,7 +38,8 @@
   },
   "prettier": "./webpack/.prettierrc.json",
   "dependencies": {
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^2.2.4",
+    "terser-webpack-plugin": "^5.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
