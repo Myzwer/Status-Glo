@@ -23,10 +23,10 @@
         <div class="left-inner">
             <!--Company Info-->
             <h3>Status Glo</h3>
-            <p class="phone-number">9111 Cross Park Dr. </p>
-            <p class="phone-number">D200-266 Knoxville TN 37923</p>
+            <p class="phone-number">523 Cupola Way </p>
+            <p class="phone-number">Knoxville TN 37918</p>
             <p class="phone-number"><a href="tel:8652473804">865-247-3804</a></p>
-            <p class="phone-number">Open Monday - Friday, 9AM to 4PM</p>
+            <p class="phone-number">Open Monday - Friday, 9AM to 5PM</p>
             <p class="phone-number">booking@statusglo.com</p>
 
             <p class="phone-number"></p>
