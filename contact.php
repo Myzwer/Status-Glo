@@ -62,13 +62,22 @@ get_header(); ?>
                                     <div class="card-gradient-1 rounded-xl shadow-2xl">
                                         <div class="text-left p-10 text-white">
                                             <h2 class="text-3xl text-left"><?php the_sub_field('title'); ?></h2>
-                                            <p class="text-left"><a
-                                                        href="tel:<?php the_sub_field('phone_number'); ?>"><i
-                                                            class="fas fa-phone text-xl"></i>
-                                                    <?php the_sub_field('phone_number'); ?></a></p>
-                                            <p class="text-left"><a href="mailto:<?php the_sub_field('email'); ?>"><i
-                                                            class="far fa-envelope"></i> <?php the_sub_field('email'); ?>
-                                                </a></p>
+                                            <p class="text-left">
+                                            <p><i class="fas fa-map-marker-alt text-large"></i>
+                                                    <?php the_sub_field('address_1'); ?></p>
+                                                    <p><?php the_sub_field('address_2'); ?></p>
+                                            </p>
+                                            <p class="text-left">
+                                                <a href="tel:<?php the_sub_field('phone_number'); ?>">
+                                                    <i class="fas fa-phone text-xl"></i>
+                                                    <?php the_sub_field('phone_number'); ?>
+                                                </a>
+                                            </p>
+                                            <p class="text-left">
+                                                <a href="mailto:<?php the_sub_field('email'); ?>">
+                                                    <i class="far fa-envelope"></i> <?php the_sub_field('email'); ?>
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -82,6 +91,7 @@ get_header(); ?>
                                         <div class="text-left p-10 text-white">
                                             <h2 class="text-3xl text-left"><?php the_sub_field('title'); ?></h2>
                                             <p class="text-left font-bold leading-5 pb-3"><?php the_sub_field('subtitle'); ?></p>
+                                            <p class="text-left font-bold leading-5 pb-3 underline"><a href="/apply">Apply Here</a></p>
                                             <p class="text-left"><a href="mailto:<?php the_sub_field('email'); ?>"><i
                                                             class="far fa-envelope"></i> <?php the_sub_field('email'); ?>
                                                 </a></p>

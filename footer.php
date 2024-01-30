@@ -22,8 +22,14 @@
         <img src="https://statusglo.com/wp-content/uploads/2021/09/Icon-White-Small.png" alt = "Company Logo">
         <div class="left-inner">
             <!--Company Info-->
-            <h3>Status Glo</h3>
+            <h3>Status Glo Cleaning</h3>
+            <p class="phone-number">523 Cupola Way </p>
+            <p class="phone-number">Knoxville TN 37918</p>
             <p class="phone-number"><a href="tel:8652473804">865-247-3804</a></p>
+            <p class="phone-number">Open Monday - Friday, 9AM to 5PM</p>
+            <p class="phone-number">booking@statusglo.com</p>
+
+            <p class="phone-number"></p>
         </div>
     </div>
 
@@ -40,7 +46,7 @@
 
             <!--Copyright Info-->
             <p class = "text-lg">Bonded, Licensed and Insured</p>
-            <p>© <?php echo date("Y"); ?> Status Glo</p>
+            <p>© <?php echo date("Y"); ?> Status Glo Cleaning</p>
 
             <!--Socials, icons from: https://fontawesome.com/ -->
             <div class="footer-icons">
