@@ -1,4 +1,5 @@
 import "../sass/frontend.scss";
+import "./glide-control";
 
 (function ($) {
   // Begin jQuery
