@@ -29,3 +29,42 @@
     padding-top: 10px;
   }
 }
+
+// Set arrows to hidden on mobile
+.glide__arrow--left, .glide__arrow--right {
+  display: none;
+}
+
+// Set arrows to show up and style them on tablet +
+@media screen and (min-width: 64em) {
+  .glide__arrow--left, .glide__arrow--right {
+    align-items: center;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 50%;
+    color: #333333;
+    display: inline-flex;
+    font-size: .8em;
+    height: 30px;
+    justify-content: center;
+    margin: 5px;
+    transition: 0.1s;
+    width: 30px;
+
+    i {
+      align-items: center;
+      display: inline-flex;
+      font-size: 1.6em;
+      height: 30px;
+      justify-content: center;
+      margin: 5px;
+      width: 30px;
+    }
+  }
+
+  .glide__arrow--left:hover, .glide__arrow--right:hover {
+    background-color: rgba(255, 255, 255, .9);
+  }
+
+}
+
+/* stylelint-enable selector-class-pattern */

@@ -15,15 +15,13 @@ get_header(); ?>
 
 <?php if (have_rows('header')): ?>
     <?php while (have_rows('header')): the_row(); ?>
-        <div class="bg-no-repeat bg-scroll bg-cover relative" style="background: linear-gradient(
-                rgba(0, 150, 238, 0.<?php the_sub_field('tinting'); ?>),
-                rgba(0, 68, 216, 0.<?php the_sub_field('tinting'); ?>)
-                ), url('<?php the_sub_field('background_image'); ?>') <?php the_sub_field('v_position'); ?> <?php the_sub_field('h_position'); ?>;
-                height: 60vh;">
+        <video class="header-video opacity-50 md:opacity-70" src="<?php the_sub_field('background_video') ?> " autoplay
+               loop playsinline muted></video>
+        <div class="viewport-header">
             <div class="content-middle text-black text-center">
                 <h1 class="text-6xl md:text-7xl mb-3"><?php the_sub_field('main_title'); ?></h1>
-                <hr class="text-blue-dark w-2/4 m-auto">
-                <h2 class="text-xl md:text-2xl px-5 my-5 mx-auto leading-5 md:w-2/5 md:max-w-2lg"><?php the_sub_field('subtitle'); ?></h2>
+                <hr class="text-black w-2/4 m-auto">
+                <h2 class="text-xl md:text-2xl px-5 my-5 mx-auto leading-5 body-font font-bold"><?php the_sub_field('subtitle'); ?></h2>
                 <a href="<?php the_sub_field('button_link'); ?>"
                    class="bg-orange rounded-full font-bold shadow-xl text-black px-8 py-3 transition duration-300 ease-in-out hover:bg-orange-hover mt-10">
                     <?php the_sub_field('button_text'); ?>
@@ -34,8 +32,8 @@ get_header(); ?>
 <?php endif; ?>
 
 
-    <div class="bg-white pb-10">
-        <div class="mx-4 md:mx-10 lg:max-w-4xl lg:text-center lg:mx-auto pt-10">
+    <div class="white-gradient py-10">
+        <div class="mx-4 md:mx-10 lg:max-w-5xl lg:text-center lg:mx-auto pt-10">
             <div class="col-span-12 text-center my-5">
                 <h2 class="text-5xl"><?php the_field('services_title'); ?></h2>
             </div>
@@ -44,7 +42,7 @@ get_header(); ?>
                 <?php while (have_rows('button_card')): the_row(); ?>
                     <div class="grid grid-cols-12">
                         <div class="col-span-12 card-gradient-1 rounded-xl shadow-2xl">
-                            <div class="text-center text-white p-4">
+                            <div class="text-center text-white p-8">
                                 <h2 class="text-3xl"><?php the_sub_field('title'); ?></h2>
                                 <p class="text-left"><?php the_sub_field('body_text'); ?></p>
                                 <div class="my-5">
@@ -60,7 +58,7 @@ get_header(); ?>
             <?php endif; ?>
 
 
-            <div class="grid grid-cols-12 gap-4 mt-6">
+            <div class="grid grid-cols-12 gap-4 mt-6 pb-10">
                 <div class="col-span-12 text-center mt-10">
                     <h2 class="text-2xl body-font uppercase font-bold"><?php the_field('services_subtitle'); ?></h2>
                 </div>
@@ -102,69 +100,59 @@ get_header(); ?>
         </div>
     </div>
 
-
-<div class="inline-background" style="background: linear-gradient(
-        rgba(0, 0, 0, 0.45),
-        rgba(0, 0, 0, 0.45)
-        ), url('<?php the_field('reviews_background_image'); ?>') no-repeat center center fixed;
-        ">
-    <div class="pb-10">
-        <div class="mx-4 md:mx-10 lg:max-w-7xl lg:text-center lg:mx-auto pt-10">
-            <div class="col-span-12 text-center my-5">
-                <h2 class="text-5xl text-white"><?php the_field('reviews_title'); ?></h2>
+    <div class="card-gradient-1 py-20">
+        <div class="lg:max-w-5xl mx-auto grid grid-cols-12 p-5 py-10 gap-4 md:gap-10 ">
+            <div class="col-span-12 md:col-span-6 relative">
+                <div class="content-middle-medium">
+                <h3 class="text-4xl">What our</h3>
+                <h2 class="text-5xl pb-5 font-bold">Clients Say</h2>
+                <p class="text-xl">Here's what our customers had to say about Status Glo Cleaning.</p>
+                </div>
             </div>
-            <div class="grid grid-cols-12 mb-10 gap-4 lg:mx-4">
 
-                <?php if (have_rows('review_1')): ?>
-                    <?php while (have_rows('review_1')): the_row(); ?>
-                        <div class="col-span-12 lg:col-span-4 bg-white rounded-xl shadow-2xl">
-                            <div class="text-center p-4">
-                                <h2 class="text-8xl text-left pt-2 pl-5 opacity-50 body-font">“</h2>
-                                <p class="text-left -mt-14 leading-5"><?php the_sub_field('review'); ?></p>
-                                <p class="font-bold text-left pt-3">-<?php the_sub_field('reviewer_name'); ?></p>
-
-                                <div class="mt-5">
-                                    <?php the_sub_field('stars'); ?>
-                                </div>
-                            </div>
+            <div class="col-span-12 md:col-span-6">
+                <div class="glide relative">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <?php
+                            if (have_rows('reviews')):
+                                while (have_rows('reviews')) : the_row(); ?>
+                                    <li class="glide__slide">
+                                        <div class="text-8xl">"</div>
+                                        <div class="text-md -mt-10 mb-3">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="prose-lg">
+                                            <?php the_sub_field("review"); ?>
+                                        </div>
+                                        <p class="font-bold text-xl pt-2"><?php the_sub_field("name"); ?></p>
+                                    </li>
+                                <?php endwhile;
+                            endif; ?>
+                        </ul>
+                    </div>
+                    <!-- Start Arrows -->
+                    <div class="pt-5">
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <i class="far fa-angle-left"></i>
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <i class="far fa-angle-right"></i>
+                            </button>
                         </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-
-                <?php if (have_rows('review_2')): ?>
-                    <?php while (have_rows('review_2')): the_row(); ?>
-                        <div class="col-span-12 lg:col-span-4 bg-white rounded-xl shadow-2xl">
-                            <div class="text-center p-4">
-                                <h2 class="text-8xl text-left pt-2 pl-5 opacity-50 body-font">“</h2>
-                                <p class="text-left -mt-14 leading-5"><?php the_sub_field('review'); ?></p>
-                                <p class="font-bold text-left pt-3">-<?php the_sub_field('reviewer_name'); ?></p>
-
-                                <div class="mt-5">
-                                    <?php the_sub_field('stars'); ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-
-                <?php if (have_rows('review_3')): ?>
-                    <?php while (have_rows('review_3')): the_row(); ?>
-                        <div class="col-span-12 lg:col-span-4 bg-white rounded-xl shadow-2xl">
-                            <div class="text-center p-4">
-                                <h2 class="text-8xl text-left pt-2 pl-5 opacity-50 body-font">“</h2>
-                                <p class="text-left -mt-14 leading-5"><?php the_sub_field('review'); ?></p>
-                                <p class="font-bold text-left pt-3">-<?php the_sub_field('reviewer_name'); ?></p>
-
-                                <div class="mt-5">
-                                    <?php the_sub_field('stars'); ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
+                    </div>
+                    <!-- End Arrows -->
+                </div>
+                <!-- End Glider -->
             </div>
         </div>
     </div>
+
 
     <div class="bg-white pb-20">
         <div class="mx-4 md:mx-10 lg:max-w-4xl lg:text-center lg:mx-auto pt-10">
@@ -197,7 +185,6 @@ get_header(); ?>
             </div>
         </div>
     </div>
-
 
 <?php
 get_footer();
