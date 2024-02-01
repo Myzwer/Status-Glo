@@ -30,7 +30,7 @@ get_header(); ?>
     <?php endwhile; ?>
 <?php endif; ?>
 
-    <div class="bg-white pb-16">
+    <div class="white-gradient pb-16">
         <div class="mx-4 md:mx-10 lg:max-w-6xl lg:text-center lg:mx-auto pt-10">
             <div class="col-span-12 text-center my-5">
                 <h2 class="text-5xl"><?php the_field('packages_title'); ?></h2>
@@ -99,8 +99,9 @@ get_header(); ?>
         <div class="inline-background" style="background: linear-gradient(
                 rgba(0, 0, 0, 0.<?php the_sub_field('tinting'); ?>),
                 rgba(0, 0, 0, 0.<?php the_sub_field('tinting'); ?>)
-                ), url('<?php the_sub_field('background_image'); ?>') no-repeat <?php the_sub_field('v_position'); ?> <?php the_sub_field('h_position'); ?> fixed;
+                ), url('<?php the_sub_field('background_image'); ?>') center center; background-repeat: no-repeat; background-size: cover;
                 ">
+
     <?php endwhile; ?>
 <?php endif; ?>
     <div class="pb-10">
